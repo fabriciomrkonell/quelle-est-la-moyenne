@@ -6,7 +6,7 @@ angular.module("module").controller("controller", ['$scope', function($scope){
 
 	angular.extend($scope, {
 		nota1: "3,30",
-		nota2: "0,00",
+		nota2: "10,00",
 		nota3: "0,00",
 		media: "0,00",
 		n1: "0,00"
@@ -35,7 +35,7 @@ angular.module("module").controller("controller", ['$scope', function($scope){
 		nota1 = parseFloat($scope.nota1.replace(",", ".")) || 0;
 		nota2 = parseFloat($scope.nota2.replace(",", ".")) || 0;
 		nota3 = parseFloat($scope.nota3.replace(",", ".")) || 0;
-		media = ((nota1 * 0.20) + (nota2 * 0.4) + (nota3 * 0.4)).toFixed(2);
+		media = ((nota1 * 0.2) + (nota2 * 0.4) + (nota3 * 0.4)).toFixed(2);
 		n1 = 12 - parseFloat($scope.media.replace(",", "."));
 
 		if(n1 <= 10 && media < 6){

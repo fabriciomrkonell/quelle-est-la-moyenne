@@ -6,8 +6,8 @@ angular.module("module").controller("controller", ['$scope', function($scope){
 
 	angular.extend($scope, {
 		nota1: "3,30",
-		nota2: "10,00",
-		nota3: "0,00",
+		nota2: "6,10",
+		nota3: "10,00",
 		media: "0,00",
 		n1: "0,00"
 	});
